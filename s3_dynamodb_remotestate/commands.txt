@@ -1,0 +1,7 @@
+terraform init \
+    -backend-config="bucket=tflab-tfstate" \
+    -backend-config="key=tflab/ecommerceapp/app.state" \
+    -backend-config="region=us-west-1" \
+    -backend-config="dynamodb_table=tflab-tfstatelock" \
+    -backend-config="access_key=" \
+    -backend-config="secret_key="
